@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Righteous&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@700&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Oswald:wght@500&family=Righteous&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@700&family=Sarala&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 16px;
+	padding: 20px;
+	background-color: #D9D9D9;
+	display: flex;
+}
+
+/*------------------------------Form------------------------------*/
+form{
+	color: #5C0B0B;
+	background-color: #fff;
+	border-radius: 27px 0 0 27px;
+	flex-basis: 70%;
+	height: 46vmax;
+	text-align: center;
+}
+
+h1{
+	margin-top: 25%;
+	margin-bottom: 20px;
+	font-size: 3em;
+	font-family: 'Inter', sans-serif;
+}
+
+.camposForm{
+	width: 30%;
+	height: 5%;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	border: none;
+	color: #6F6F6F;
+	background-color: #D9D9D9;
+	font-family: 'Oswald', sans-serif;
+}
+
+#enviar{
+	font-family: 'Inter', sans-serif;
+	margin-top: 10px;
+	padding: 10px 55px 10px 55px; 
+	border-radius: 27px;
+	border: none;
+	color: #fff;
+	background-color: #5C0B0B;
+}
+
+#enviar:hover{
+	color: rgb(85, 85, 85);
+	background-color: rgb(57, 6, 6);
+	cursor: pointer;
+}
+
+/*-----------------------------Aside-----------------------------*/
+aside{
+	color: #fff;
+	background-color: #5C0B0B;
+	border-radius: 0 27px 27px 0;
+	flex-basis: 30%;
+}
+
+aside img{
+	width: 30%;
+	padding: 4%;
+}
+
+aside h2{
+	font-family: 'Inter', sans-serif;
+	margin: 10vmax 30% 14px 30%;
+	text-align: center;
+}
+
+aside p{
+	margin: 0 20% 0 20%;
+	text-align: center;
+}
+
+aside #bCad{
+	margin-top: 24px;
+}
+
+aside a{
+	border-radius: 27px;
+	border: none;
+	color: #5C0B0B;
+	background-color: #fff;
+	text-decoration: none;
+	padding: 8px 20px;
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+}
+
+aside a:hover{
+	color: rgb(57, 6, 6);
+	background-color: rgb(85, 85, 85);
+}
+/*---------------------------Responsivo---------------------------*/
+
+@media only screen and (min-width: 0px) and (max-width: 959px) {
+    h1{
+        font-size: 1.3em;
+    }
+    
+    .camposForm{
+		width: 45%;
+		height: 5%;
+		margin-bottom: 20px;
+		font-size: 14px;
+		padding-left: 5px;
+	}
+	
+	
+	aside h2{
+		font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 959px) and (max-width: 1259px) {
+    h1{
+        font-size: 1.6em;
+    }
+    
+    .camposForm{
+		width: 40%;
+		height: 5%;
+		margin-bottom: 20px;
+		font-size: 18px;
+		padding-left: 5px;
+	}
+	
+	aside h2{
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (min-width: 1259px) and (max-width: 1959px) {
+    h1{
+        font-size: 2em;
+    }
+    
+    .camposForm{
+		font-size: 20px;
+	}
+
+}
+
