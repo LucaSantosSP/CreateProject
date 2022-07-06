@@ -8,6 +8,8 @@
 	</head>
 	
 	<body>
+		<header><img id="logo" th:src="@{/Imagens/Logo.png}" alt="Logo"></header>
+		
 		<form>
 			<h1>Entrar em uma conta</h1>
 			
@@ -20,8 +22,8 @@
 		<aside>
 			<img id="logo" th:src="@{/Imagens/Logo.png}" alt="Logo">
 			<h2>Ainda não possui uma conta?</h2>
-			<p>O Create! é a maior plataforma de cadastro online do Brasil.</p>
-			<p>Você vai ficar de fora?</p>
+			<p class="asidePar">O Create! é a maior plataforma de cadastro online do Brasil.</p>
+			<p class="asidePar">Você vai ficar de fora?</p>
 			<p id="bCad"><a th:href="@{/cadastro}">Cadastre-se</a></p>
 		</aside>
 	</body>

@@ -8,7 +8,9 @@
 	</head>
 	
 	<body>
-		<form>
+		<header><img id="logo" th:src="@{/Imagens/Logo.png}" alt="Logo"></header>
+		
+		<form id="formCadastro">
 			<h1>Crie uma conta</h1>
 			
 			<input class="camposForm" type="text" required placeholder="Nome"><br>
@@ -20,9 +22,9 @@
 		
 		<aside>
 			<img id="logo" th:src="@{/Imagens/Logo.png}" alt="Logo">
-			<h2>Bem vindo ao Create!</h2>
-			<p>Crie uma conta na nossa plataforma para aproveitar todos os nossos serviços.</p><br>
-			<p>Ja possui uma conta?</p>
+			<h2 id="h2Monitor">Bem vindo ao Create!</h2>
+			<p class="asidePar">Crie uma conta na nossa plataforma para aproveitar todos os nossos serviços.</p><br>
+			<p id="h2Celular">Ja possui uma conta?</p>
 			<p id="bCad"><a th:href="@{/index}">Entrar</a></p>
 		</aside>
 	</body>
