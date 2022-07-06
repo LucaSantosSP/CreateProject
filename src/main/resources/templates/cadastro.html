@@ -3,26 +3,27 @@
 	<head>
 	 	<meta charset="UTF-8">
 	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Create! | Login</title>
+		<title>Create! | Cadastre-se</title>
 		<link rel="stylesheet" th:href="@{/CSS/main.css}">
 	</head>
 	
 	<body>
 		<form>
-			<h1>Entrar em uma conta</h1>
+			<h1>Crie uma conta</h1>
 			
+			<input class="camposForm" type="text" required placeholder="Nome"><br>
 			<input class="camposForm" type="email" required placeholder="Email"><br>
 			<input class="camposForm" type="password" required placeholder="Senha"><br>
 			
-			<input type="button" value="Entrar" id="enviar">
+			<input type="button" value="Cadastrar" id="enviar">
 		</form>
 		
 		<aside>
 			<img id="logo" th:src="@{/Imagens/Logo.png}" alt="Logo">
-			<h2>Ainda não possui uma conta?</h2>
-			<p>O Create! é a maior plataforma de cadastro online do Brasil.</p>
-			<p>Você vai ficar de fora?</p>
-			<p id="bCad"><a th:href="@{/cadastro}">Cadastre-se</a></p>
+			<h2>Bem vindo ao Create!</h2>
+			<p>Crie uma conta na nossa plataforma para aproveitar todos os nossos serviços.</p><br>
+			<p>Ja possui uma conta?</p>
+			<p id="bCad"><a th:href="@{/index}">Entrar</a></p>
 		</aside>
 	</body>
 </html>
