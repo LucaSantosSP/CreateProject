@@ -11,8 +11,8 @@ public class PrincipalController {
 		return "index";
 	}
 	
-	@GetMapping("/cadastro")
-	public String cadastro() {
-		return "cadastro";
-	}
+	//@GetMapping("/cadastro")
+	//public String cadastro() {
+	//	return "cadastro";
+	//}
 }

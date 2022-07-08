@@ -3,21 +3,17 @@
 	<head>
 	 	<meta charset="UTF-8">
 	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Create! | Cadastre-se</title>
+		<title>Create! | Login</title>
 		<link rel="stylesheet" th:href="@{/CSS/main.css}">
+		<link rel="stylesheet" th:href="@{/CSS/sucesso.css}">
 	</head>
 	
 	<body>
 		<header><img id="logo" th:src="@{/Imagens/Logo.png}" alt="Logo"></header>
 		
-		<form id="formCadastro" th:action="@{cadastro}" method="POST" th:object="${usuario}">
-			<h1>Crie uma conta</h1>
-			
-			<input class="camposForm" type="text" required placeholder="Nome" th:field="*{nome}"><br>
-			<input class="camposForm" type="email" required placeholder="Email" th:field="*{email}"><br>
-			<input class="camposForm" type="password" required placeholder="Senha" th:field="*{senha}"><br>
-			
-			<input type="submit" value="Cadastrar" id="enviar">
+		<form>
+			<h1>Sua conta foi criada com sucesso!</h1>
+			<p id="bSucesso"><a th:href="@{/index}">Entrar</a></p>
 		</form>
 		
 		<aside>

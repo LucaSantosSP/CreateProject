@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Oswald:wght@500&family=Righteous&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@700&family=Sarala&display=swap');
+
+#bSucesso a{
+	border-radius: 27px;
+	border: none;
+	color: #FFF;
+	background-color: #5C0B0B;
+	text-decoration: none;
+	padding: 8px 20px;
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+}
+
+#bSucesso a:hover{
+	color: rgb(85, 85, 85);
+	background-color: rgb(57, 6, 6);
+}
