@@ -11,6 +11,11 @@ public class PrincipalController {
 		return "index";
 	}
 	
+	@GetMapping("/perfil")
+	public String perfil(){
+		return "perfil";
+	}
+	
 	//@GetMapping("/cadastro")
 	//public String cadastro() {
 	//	return "cadastro";

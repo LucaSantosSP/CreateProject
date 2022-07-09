@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	 	<meta charset="UTF-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Create! | Meu perfil</title>
+		<link rel="stylesheet" th:href="@{/CSS/perfil.css}">
+	</head>
+	
+	<body>
+		<header>
+			<img id="logo" th:src="@{/Imagens/Logo.png}" alt="Logo">
+			<a th:href="@{/index}">Sair</a  >
+		</header>
+
+		<main>
+			<img th:src="@{/Imagens/Foto.png}" alt="Foto do usuário">
+			<div class="infoUser">
+				<div id="caixa01">
+					<p class="nomeCaixa">Nome</p>
+					<p class="conteudoCaixa" th:text="${nome}"></p>
+					
+					<p class="nomeCaixa">Email</p>
+					<p class="conteudoCaixa" th:text="${email}"></p>
+				</div>
+				
+				<div id="caixa02">
+					<p class="nomeCaixa">Data de Nascimento</p>
+					<p class="conteudoCaixa" th:text="${dtNasc}"></p>
+					
+					<button class="buttons">Alterar Senha</button>
+				</div>
+			</div>
+			
+			<button class="buttons">Atualizar informações</button>
+			<button id="butExcluir">Excluir Conta</button>
+		</main>
+	</body>
+</html>
